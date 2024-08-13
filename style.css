@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #151926;
+}
+
+.item {
+  min-width: 362px;
+  height: 75px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.one {
+  background-color: #ef3d66;
+}
+
+.one span {
+  display: block;
+  padding: 22px;
+}
+
+.two {
+  background-color: #15a8b4;
+}
+
+.two span {
+  display: block;
+  padding: 20px;
+}
+
+.three {
+  background-color: #ef3d66;
+}
+
+.three span {
+  display: block;
+  padding: 22px;
+}
+
+.four {
+  background-color: #15a8b4;
+}
+
+.four span {
+  display: block;
+  padding: 12px;
+}
+
+.five {
+  background-color: #ef3d66;
+}
+
+.five span {
+  display: block;
+  padding: 22px;
+}
+
+.six {
+  background-color: #15a8b4;
+}
+
+.six span {
+  display: block;
+  padding: 20px;
+}
+
+.seven {
+  background-color: #ef3d66;
+}
+
+.seven span {
+  display: block;
+  padding: 22px;
+}
+
+.eight {
+  background-color: #15a8b4;
+}
+
+.eight span {
+  display: block;
+  padding: 12px;
+}
+
+.nine {
+  background-color: #ef3d66;
+}
+
+.nine span {
+  display: block;
+  padding: 22px;
+}
+
+.ten {
+  background-color: #15a8b4;
+}
+
+.ten span {
+  display: block;
+  padding: 20px;
+}
+
+.eleven {
+  background-color: #ef3d66;
+}
+
+.eleven span {
+  display: block;
+  padding: 22px;
+}
+
+.twelve {
+  background-color: #15a8b4;
+}
+
+.twelve span {
+  display: block;
+  padding: 12px;
+}
+
+.thirteen {
+  background-color: #ef3d66;
+}
+
+.thirteen span {
+  display: block;
+  padding: 22px;
+}
+
+/* Flex box */
+
+.container {
+  display: flex;
+  /* flex-direction: row; /* (default) */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; /* (default) */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+}
