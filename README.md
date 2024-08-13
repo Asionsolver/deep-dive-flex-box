@@ -64,11 +64,11 @@
 
 > ### **flex-direction: row-reverse**
 >
-> **Items are laid out horizontally from right to left (reverse order of row).** > ![row-reverse](./assets/img/row-reverse.png)
+> **Items are laid out horizontally from right to left (reverse order of row).**
+>
+> ![row-reverse](./assets/img/row-reverse.png)
 
 <!--  -->
-
-<!-- Remove one of the duplicate headings -->
 
 > **Items are laid out vertically from top to bottom.**
 >
@@ -221,3 +221,204 @@
 flex-flow: <flex-direction> <flex-wrap>;
 flex-flow: row wrap; /* Shorthand for flex-direction: row; and flex-wrap: wrap; */
 ```
+
+> ## **justify-content**
+>
+> **justify-content is a CSS property that aligns the flex items along the main axis of a flex container. The main axis is defined by the flex-direction property and can either be horizontal (row) or vertical (column). The justify-content property is applied to the flex container, and it helps control the spacing and alignment of flex items within that container.**
+
+<!--  -->
+
+> ### Why Use justify-content?
+>
+> You would use justify-content to align and distribute space between items within a flex container. This property is particularly useful when you want to:
+>
+> 1. Center content horizontally or vertically.
+> 2. Space items evenly within the container.
+> 3. Control the alignment of items when the container's size is larger than the combined size of the items.
+
+<!--  -->
+
+> ### **Possible Values of justify-content:**
+>
+> ### **justify-content: flex-start (default)**
+>
+> **Aligns items to the start of the container.**
+>
+> ![flex-start](./assets/img/flex-start.png)
+
+<!--  -->
+
+> ### **justify-content: flex-end**
+>
+> **Aligns items to the end of the container.**
+>
+> ![flex-end](./assets/img/flex-end.png)
+
+<!--  -->
+
+> ### **justify-content: center**
+>
+> **Centers items within the container.**
+>
+> ![center](./assets/img/center.png)
+
+<!--  -->
+
+> ### **justify-content: space-between**
+>
+> **Distributes items evenly, with the first item at the start and the last item at the end.**
+>
+> ![space-between](./assets/img/space-between.png)
+
+<!--  -->
+
+> ### **justify-content: space-around**
+>
+> **Distributes items evenly with equal space around them. The space before the first item and after the last item is half the size of the space between items.**
+>
+> ![space-around](./assets/img/space-around.png)
+
+<!--  -->
+
+> ### **justify-content: space-evenly**
+>
+> **Distributes items evenly with equal space around them, including before the first item and after the last item.**
+>
+> ![space-evenly](./assets/img/space-evenly.png)
+
+<!--  -->
+
+> ## **align-items**
+>
+> **align-items is a CSS property used in a flex container to align flex items along the cross axis (the axis perpendicular to the main axis). The alignment is based on the flex container's height when the flex-direction is set to row (which is the default) or its width when the flex-direction is set to column.**
+
+<!--  -->
+
+> ### Why Use align-items?
+>
+> You use align-items to control how flex items are positioned along the cross axis of the flex container. This is particularly useful when you want to align items vertically (if the main axis is horizontal) or horizontally (if the main axis is vertical), ensuring that they are consistent regardless of their content size.
+
+<!--  -->
+
+> ### **Possible Values of align-items:**
+>
+> ### **align-items: stretch (default)**
+>
+> **Stretches the items to fill the container (default value). If the item's size is auto, it will stretch to fit the container.**
+>
+> ![align-stretch](./assets/img/align-stretch-1.png)
+>
+> ![align-stretch](./assets/img/align-stretch-2.png)
+
+<!--  -->
+
+> ### **align-items: flex-start**
+>
+> **Aligns items to the start of the cross axis.**
+>
+> ![align-end](./assets/img/align-flex-start.png)
+
+<!--  -->
+
+> ### **align-items: flex-end**
+>
+> ** Aligns items to the end of the cross axis.**
+>
+> ![align-flex-end](./assets/img/align-flex-end.png)
+
+<!--  -->
+
+> ### **align-items: center**
+>
+> **Centers items along the cross axis.**
+>
+> ![align-center](./assets/img/align-center.png)
+
+<!--  -->
+
+> ### **flex-direction: column**
+>
+> ### **flex-wrap: wrap**
+>
+> **When using flex-direction: column and flex-wrap: wrap, the flex container is set up to stack items vertically and wrap them into new columns as needed. In this scenario, the align-items property still controls the alignment of items, but its effect is applied along the horizontal cross axis (the width of the container) rather than the vertical axis.**
+
+<!--  -->
+
+> ### **align-item: stretch**
+>
+> ![column-align-stretch](./assets/img/column-align-stretch.png)
+
+<!--  -->
+
+> ### **align-item: flex-start**
+>
+> ![column-align-flex-start](./assets/img/column-align-flex-start.png)
+
+<!--  -->
+<!--  -->
+
+> ### **align-item: flex-end**
+>
+> ![column-align-flex-end](./assets/img/column-align-flex-end.png)
+
+<!--  -->
+<!--  -->
+
+> ### **align-item: center**
+>
+> ![column-align-center](./assets/img/column-align-center.png)
+
+<!--  -->
+
+> ## **align-content**
+>
+> **align-content is a CSS property used in flexbox layouts to align flex lines (rows or columns) within the flex container when there is extra space in the cross axis. Unlike align-items, which aligns individual flex items within their flex line, align-content aligns the entire set of flex lines relative to the flex container's cross axis.**
+>
+> ### Why Use align-content?
+>
+> You use align-content to manage how multiple flex lines are distributed and aligned within the flex container. This property becomes relevant when you have more than one line of flex items (i.e., when flex-wrap: wrap is used), and it allows you to control the spacing and alignment of these lines.
+
+<!--  -->
+
+> ### **Possible Values of align-content:**
+>
+> ### **align-content: flex-start**
+>
+> **Aligns flex lines to the start of the cross axis (top if the main axis is horizontal).**
+>
+> ![align-content-flex-start](./assets/img/flex-start.png)
+
+<!--  -->
+
+> ### **align-content: center**
+>
+> **Centers flex lines along the cross axis.**
+>
+> ![align-content-center](./assets/img/align-content-center.png)
+
+<!--  -->
+
+> ### **align-content: space-between**
+>
+> **Distributes flex lines evenly with the first line at the start and the last line at the end of the container.**
+>
+> ![align-content-space-between](./assets/img/align-content-space-between.png)
+
+<!--  -->
+
+> ### **align-content: space-around**
+>
+> **Distributes flex lines evenly with equal space around them. The space before the first line and after the last line is half the space between lines.**
+>
+> ![align-content-space-around](./assets/img/align-content-space-around.png)
+
+<!--  -->
+<!--  -->
+
+> ### **align-content: space-evenly**
+>
+> **Distributes flex lines evenly with equal space between all lines, including before the first line and after the last line.**
+>
+> ![align-content-space-evenly](./assets/img/align-content-space-evenly.png)
+
+<!--  -->
